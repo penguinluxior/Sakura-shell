@@ -1,0 +1,16 @@
+#!/bin/sh
+
+NORMAL="$HOME/.config/wofi/style-normal.css"
+LOADING="$HOME/.config/wofi/style-loading.css"
+
+desktop=$(wofi --show drun --allow-images --style "$NORMAL" --define=drun-print_desktop_file=true)
+
+[ -z "$desktop" ] && exit 0
+
+wofi --show dmenu --style "$LOADING" --prompt "Cargando..." <<< "  Iniciando..." &
+loading_pid=$!
+
+sleep 0.45
+kill "$loading_pid" 2>/dev/null
+
+gtk-launch "$(basename "$desktop" .desktop)" 2>/dev/null &

@@ -1,0 +1,6 @@
+#!/bin/sh
+if pgrep -f "qs -c calendar" >/dev/null; then
+    pkill -f "qs -c calendar"
+else
+    qs -c calendar &
+fi

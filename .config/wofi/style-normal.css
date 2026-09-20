@@ -1,0 +1,73 @@
+* {
+    font-family: "Fredoka";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+window {
+    background-image: url("file:///home/penguinluxior/Descargas/pink normal.webp");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 110px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 110px;
+    background-color: rgba(20, 15, 25, 0.35);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 110px;
+    border: 2px solid rgba(255, 170, 215, 0.55);
+    border-radius: 26px;
+    padding: 12px;
+}
+
+#input {
+    background-color: rgba(255, 190, 225, 0.08);
+    color: #ffb8dc;
+    border: 1px solid rgba(255, 170, 215, 0.35);
+    border-radius: 18px;
+    padding: 10px 14px;
+    margin: 4px 4px 10px 4px;
+}
+
+#outer-box {
+    padding: 4px;
+}
+
+#inner-box {
+    padding: 2px;
+}
+
+#entry {
+    color: #ffb8dc;
+    background-color: transparent;
+    border-radius: 17px;
+    padding: 11px 16px;
+    margin: 6px 2px;
+}
+
+#entry:hover {
+    background-color: rgba(255, 170, 215, 0.10);
+    color: #ffd0e8;
+}
+
+#entry:selected {
+    background-color: rgba(255, 145, 205, 0.20);
+    color: #ffd2e9;
+    border: 1px solid rgba(255, 180, 220, 0.45);
+    border-radius: 17px;
+}
+
+#text {
+    color: inherit;
+}
+
+#img { min-width: 32px; min-height: 32px; margin-right: 10px; }
+#img image { min-width: 32px; min-height: 32px; }
+
+window {
+    background-image: url("/home/penguinluxior/Descargas/pink normal.webp");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 120px 120px;
+}
