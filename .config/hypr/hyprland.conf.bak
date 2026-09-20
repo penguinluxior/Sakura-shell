@@ -1,3 +1,4 @@
+bind = SUPER, Space, exec, ~/.local/bin/wofi-cute
 
 
 

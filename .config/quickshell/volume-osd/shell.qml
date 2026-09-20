@@ -57,6 +57,7 @@ ShellRoot {
         color: "transparent"
         aboveWindows: true
         exclusiveZone: 0
+        mask: Region {}
 
         Rectangle {
             id: hud
