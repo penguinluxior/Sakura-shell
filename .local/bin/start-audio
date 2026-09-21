@@ -1,0 +1,5 @@
+#!/bin/sh
+pipewire >/tmp/pipewire.log 2>&1 &
+wireplumber >/tmp/wireplumber.log 2>&1 &
+pipewire-pulse >/tmp/pipewire-pulse.log 2>&1 &
+exit 0
