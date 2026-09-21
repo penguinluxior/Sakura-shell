@@ -1,0 +1,4 @@
+#!/bin/sh
+awww-daemon >/tmp/awww.log 2>&1 &
+sleep 1
+awww img /home/penguinluxior/Escritorio/waifu.im_8463.png

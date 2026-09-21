@@ -1,0 +1,13 @@
+#!/usr/bin/env fish
+
+set CLASS (hyprctl activewindow -j | jq -r '.class')
+
+if test "$CLASS" != "Waydroid"
+    exit 0
+end
+
+set POS (hyprctl cursorpos)
+set X (string split ',' $POS)[1]
+set Y (string split ',' $POS)[2]
+
+sudo waydroid shell input tap $X $Y

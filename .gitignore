@@ -1,0 +1,9 @@
+*.log
+*.tmp
+*.cache
+.cache/
+build/
+dist/
+node_modules/
+__pycache__/
+*.swp
